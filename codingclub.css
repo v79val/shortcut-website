@@ -1,0 +1,84 @@
+body{
+    background-color:black;
+    color: white;
+    font-family: monospace;
+    font-size: 15px;
+}
+
+h1{
+  font-size: 40px;
+  text-align: center;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #FDC81E;
+  }
+  
+ul.topnav li a {
+    float:right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 35px 35px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: monospace;
+  }
+  
+ul.topnav li a:hover {
+      background-color: #111;
+    }
+  
+  @media screen and (max-width: 600px) {
+    ul.topnav li.left, 
+    ul.topnav li {float: none;}
+  }
+
+#logo{
+      float:left;
+      width:25%;
+  }
+
+.intro{
+  font-size: 20px;
+  float: right;
+  padding: 20px 20px;
+}
+
+.intro img{
+  position: left;
+  float: left;
+  width: 50%;
+  padding: 0px 20px 0px 0px;
+}
+
+.clubs{
+  font-family: monospace;
+  font-size: 20px;
+  text-align: center;
+}
+
+.clubs p{
+  border: solid#FDC81E 3px;
+  padding: 10px 10px;
+}
+
+table, td, td{
+  border: 2px solid #FDC81E;
+}
+
+th , td{
+  padding: 2px;
+}
+
+footer{
+  text-align: center;
+}
+
+.email{
+  border: solid #FDC81E 3px;
+}
