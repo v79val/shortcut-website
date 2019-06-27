@@ -10,15 +10,23 @@
         </head>
 
         <body>
-            <ul class="topnav">
-                <li><img src="theshortcut.png" id="logo"/> </li>
-                <li><a href="#Contact Us">Contact Us</a></li>
-                <li><a href="#Schedule">Schedule</a></li>
-                <li><a href="#Clubs">Clubs</a></li>
-            </ul>
+            <div class="topnav">
+                <img src="theshortcut.png" id="logo"/> 
+                <div class="topnav-right">
+                <a href="#Clubs">Clubs</a>
+                <a href="#Schedule">Schedule</a>
+                <a href="#Sign up">Sign up</a>
+                <a href="#Contact Us">Contact Us</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>
+                
+                </div>
+            </div>
             
             <div class="intro">
                 <img src="people_face.jpg" alt="should be a pic" />
+                <h1><u>About us</u></h1>
                 <p> The Shortcut hosts daily peer-learning clubs, where people can help each other improve their skills. Through informal knowledge sharing, we create a community of coders who are interested in technology and eager to share their passion with others.
                     <br>
                     <br>
@@ -27,7 +35,7 @@
             </div>
 
             <div class="clubs"> 
-                <a name="Clubs"><h1>Our clubs</h1></a>
+                <a name="Clubs"><h1><u>Our clubs</u></h1></a>
 
                 <h2>Python Club</h2>
                 <img src="pythonclub.jpg" alt="should be a pic" />
@@ -61,9 +69,9 @@
             </div>
 
             <div class="schedule">
-                <a name="Schedule"><h1>Club events schedule</h1></a>
+                <a name="Schedule"><h1><u>Club events</u></h1></a>
                 <h2>Weekly event schedule</h2>
-                <table style="width:50%">
+                <table style="width:50%" align="center">
                     <tr>
                         <th>Mon</th>
                         <th>Tue</th>
@@ -85,16 +93,56 @@
                     </tr>
                 </table>
             </div>
+            <br>
+            <br>
+            <div class="Signup">
+                <a name="Sign up"></a>
+                <!-- Button to open the modal -->
+                <button onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
+                <!-- The Modal (contains the Sign Up form) -->
+                <div id="id01" class="modal">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">Go Back</span>
+                    <form class="modal-content" action="/action_page.php">
+                    <div class="container">
+                        <h1>Sign Up</h1>
+                        <p>Please fill in this form to create an account.</p>
+                        <hr>
+                        <label for="email"><b>Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+                  
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                  
+                        <label for="psw-repeat"><b>Repeat Password</b></label>
+                        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                  
+                        <label>
+                          <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                        </label>
+                  
+                       
+                  
+                        <div class="clearfix">
+                          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                          <button type="submit" class="signup">Sign Up</button>
+                        </div>
+                    </div>
+                    </form>
+                </div>    
+            </div>
+
 
             <footer>
-                <a name="Contact Us"><h1>Contact us</h1></a>
+                <a name="Contact Us"><h1><u>Contact us</u></h1></a>
                 <h2>Contact us: info@theshortcut.org </h2>
                 <h2>Subscribe us</h2>
                 <form action="/action_page.php">
                     Email address:<br>
                     <input class="email" type="text" value="Email">
                     <button type="button">Subscribe!</button>
-                </form>       
+                </form>    
+                
+                
             </footer>
         </body>
     </html>
