@@ -5,24 +5,44 @@ body{
     font-size: 15px;
 }
 
+
+h3{
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 1rem;
+
+}
+
+
+
 h1{
   font-size: 40px;
   text-align: center;
+  margin-top: 5rem;
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #FDC81E;
   overflow: hidden;
+  position: fixed;
+  top: 0;
+  }
+
+ 
+
+html {
+  scroll-behavior: smooth;
+  
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
 color: black;
-text-align: center;
-padding: 10px 15px;
+text-align: left;
+padding: 5px 30px 40px 30px;
 text-decoration: none;
-font-size: 30px;
+font-size: 25px;
 }
 
 /* Change the color of links on hover */
@@ -45,13 +65,15 @@ padding: 25px 15px;
 
 #logo{
       float:left;
-      width:25%;
+      width:13%;
   }
 
 .intro{
   font-size: 20px;
   float: right;
   padding: 20px 20px;
+  margin-bottom: 5rem;
+  
 }
 
 .intro img{
@@ -68,16 +90,20 @@ padding: 25px 15px;
 }
 
 .clubs p{
-  border: solid#FDC81E 3px;
+  border: solid#FDC81E 2px;
   padding: 10px 10px;
+  margin-right: 20rem;
+  margin-left: 20rem;
+ 
 }
 
 .schedule{
   text-align: center;
+
 }
 
-table, tr, td{
-  border: 3px solid #FDC81E;
+table, td {
+  border: 2px solid #FDC81E;
 }
 
 th , td{
@@ -86,7 +112,7 @@ th , td{
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
-  width: 98%;
+  width: 96%;
   padding: 15px;
   margin: 5px 0 22px 0;
   display: inline-block;
@@ -197,26 +223,17 @@ hr {
   }
 }
 
-<<<<<<< HEAD
 .don-galina {
 
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin-left: 1rem;
+  margin-left: 3.5rem;
   
   padding: 0.5rem;
 
 }
 
-
-.card-title-don{
-
- 
-
-
-
-}
 
 .donimg{
  
@@ -230,14 +247,23 @@ hr {
 .galinaimg {
 
   height: 15rem;
+  margin-right: 3rem;
  
 
 }
 
+h5{
+
+  font-size: 1.5rem
+  
+}
+
+.card-text{
+font-size: 1.1rem
 
 
-=======
->>>>>>> 2dbe1ef073543e5e6ea7c7352e703a8573425b27
+}
+
 footer{
   text-align: center;
   position: center;
