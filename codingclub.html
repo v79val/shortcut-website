@@ -16,50 +16,64 @@
             <div class="topnav">
                 <img src="theshortcut.png" id="logo"/> 
                 <div class="topnav-right">
-                <a href="#Clubs">Clubs</a>
-                <a href="#Schedule">Schedule</a>
-                <a href="#Contact Us">Contact Us</a>
+                <a href="#Clubs"><b>Clubs</b></a>
+                <a href="#Schedule"><b>Schedule</b></a>
+                <a href="#Contact Us"><b>Contact Us</b></a>
                 </div>
             </div>
           </html>
             </body>  
             <div class="intro">
                 <img src="people_face.jpg" alt="should be a pic" />
-                <h3>About us</h3>
-                <p class=aboutus> The Shortcut hosts daily peer-learning clubs, where people can help each other improve their skills. Through informal knowledge sharing, we create a community of coders who are interested in technology and eager to share their passion with others.
+                <h3 class=about>About us</h3>
+                <p> </p> The Shortcut hosts daily peer-learning clubs, where people can help each other improve their skills. Through informal knowledge sharing, we create a community of coders who are interested in technology and eager to share their passion with others.
                     <br>
                     <br>
                     Our coding clubs are Python Club, ReactJS Club, Girls Coding Club and JavaScript Club. Everyone is welcome to join regardless their knowledge and skills in coding.
                 </p> 
             </div>
 
-            <div class="clubs"> 
-                <a name="Clubs"><h1>Our clubs</h1></a>
+            
 
-                <h2>Python Club</h2>
+            <div class="clubs"> 
+                
+                <a name="Clubs" class='ourclub'><h1>Our clubs</h1></a>
+                
+                <div class=pythonclub>
+                        <h2>Python Club</h2>
                 <img src="pythonclub.jpg" alt="should be a pic" />
-                    <p>Python is one of the most popular and high demand programming languages and its versatility is what makes it invaluable for beginners.
+                <p> Python is one of the most popular and high demand programming languages and its versatility is what makes it invaluable for beginners.
                     <br>No previous experience with Python is required
                     <br>Every Monday starting February 18 from 17.00 to 19.00 at The Shortcut Lab.</p>
+                </div>
                 
+                <div class='reactclubs'> 
                 <h2>ReactJS Club</h2>
-                <img src="reactclub.jpg" alt="should be a pic" />
+                 <img src="reactclub.jpg" alt="should be a pic" />
+                 
+                
                 
                     <p>Coding is the language you have to speak in 2019. The ReactJS Club continues this year too and is open to everyone interested in learning by doing.
                     <br>The ReactJS Club is open to everyone, regardless of the background and experience.
                     <br>Every Thursday from 16:30 to 18:30 starting January 17th at The Shortcut Lab.
                 </p>
+                </div>
 
+                <div class='girlsclub'>
                 <h2>Girls Coding Club</h2>
                 <img src="Girls-Coding-Club-logo.png" alt="should be a pic" />
+                
                 <p>This club meets on a weekly basis and its purpose is to give the opportunity to women to improve their coding knowledge . The club is open to anyone who supports women in tech.
                     <br>We use FreeCodeCamp curriculum to grow to knowledge and skills little by little. 
                     <br>Each week we are working on different topics going step by step through HTML, HTML5, CSS, JavaScript. 
                     <br>A Hackathon every 6 months is organised by the club participants to test how their skills have evolved and validate the learnings.
                  </p>
+                </div>
 
+                <div class='java'>
                 <h2>JavaScript Club</h2>
                 <img src="jsclublogo.jpg" alt="should be a pic" />
+                
                 <p> JavaScript is the most popular programming language in the world, working on a variety of platforms and devices.
                     <br>We’ll also provide various workshops on Git, Azure, AWS. Their exact dates will be announced later in the event page and by email.
                     <br>The JavaScript Club is open to everyone eager to learn and advance step by step each week.
@@ -67,10 +81,10 @@
                 </p>
             </div>
 
+            <a name="Schedule"><h1>Club events</h1></a>
             <div class="schedule">
-                <a name="Schedule"><h1>Club events</h1></a>
-                <h2>Weekly event schedule</h2>
-                <table style="width:50%" align="center">
+                <h6>Weekly event schedule</h6>
+                <table style="width:105%">
                     <tr>
                         <th>Mon</th>
                         <th>Tue</th>
@@ -97,35 +111,36 @@
             <br>
 
             <footer>
-                <a name="Contact Us"><h1>Contact us</h1></a>
-
+                <a name="Contact Us"><h1>Contact Us</h1></a>
+                
                 <section class="don-galina">
-                    <div class="card" style="width: 50%;">
+                        
+                    <div>
                       <img src="Don.png" class='donimg' alt="image">
-                      <div class="card-body">
-                        <h5 class="card-title">Don</h5>
+                      
+                        <h5 class="card-text-don">Don</h5>
                         <p class="card-text">don@theshortcut.org</p>
-                      </div>
+                        <p class="card-text-don">General inquiries: info@theshortcut.org </p>
                     </div>
 
-                    <div class="card" style="width: 50%;">
+                    <div>
                       <img src="Galina.png" class='galinaimg'alt="image">
-                      <div class="card-body">
-                        <h5 class="card-title">Galina</h5>
-                        <p class="card-text">galina@theshortcut.org</p>
-                      </div>
+                     
+                        <p class="card-title-galina">Galina</p>
+                        <p class="card-title">galina@theshortcut.org</p>
+                        
                     </div>
                 </section>
 
-                <h2>General inquiries: info@theshortcut.org </h2>
-                <h3>Subscribe to our newsletters</h3>
-                <form action="/action_page.php">
+                
+                <h3 class='newsletters'>Subscribe to our newsletters</h3>
+                <form class='email' action="/action_page.php">
                     Email: <input type="email" name="emailaddress">
-                    <button type="button" id="subscribebutton">Subscribe!</button>
+                    <button type="button" id="subscribebutton"><b>Subscribe!</b></button>
                 </form>    
 
                 <!-- Button to open the modal -->
-                <button onclick="document.getElementById('id01').style.display='block'">Sign up to our clubs!</button>
+                <button class='signup'onclick="document.getElementById('id01').style.display='block'">Sign up to our clubs!</button>
                 <!-- The Modal (contains the Sign Up form) -->
                 <div id="id01" class="modal">
                     <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">Go Back</span>
@@ -140,14 +155,14 @@
 
                         <label for="email"><b>Email</b></label>
                         <input type="text" placeholder="Enter Email" name="email" required>
-                        
+                        <br>
                         <label for="clubs"><b>Clubs to join</b></label>
                         <br>
                         <br>
-                        <input type="checkbox" name="club1" value="Pythonclub"> Python Club<br>
-                        <input type="checkbox" name="club2" value="ReactJSclub"> ReactJS Club<br>
-                        <input type="checkbox" name="club3" value="girlsclub"> Girls Coding Club<br>
-                        <input type="checkbox" name="club4" value="JSclub"> JavaScript Club<br>
+                        <input type="checkbox" name="club1" value="Pythonclub"> Python Club
+                        <input type="checkbox" name="club2" value="ReactJSclub"> ReactJS Club
+                        <input type="checkbox" name="club3" value="girlsclub"> Girls Coding Club
+                        <input type="checkbox" name="club4" value="JSclub"> JavaScript Club
                         <br>
                        
                         <div class="clearfix">
