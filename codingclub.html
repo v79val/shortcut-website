@@ -37,14 +37,16 @@
 
             <div class="clubs"> 
                 
-                <a name="Clubs" class='ourclub'><h1>Our clubs</h1></a>
+                <h1>Our clubs</h1>
                 
                 <div class=pythonclub>
-                        <h2>Python Club</h2>
+                    <a name="Clubs"></a> <h2>Python Club</h2></a>
                 <img src="pythonclub.jpg" alt="should be a pic" />
+                
                 <p> Python is one of the most popular and high demand programming languages and its versatility is what makes it invaluable for beginners.
                     <br>No previous experience with Python is required
-                    <br>Every Monday starting February 18 from 17.00 to 19.00 at The Shortcut Lab.</p>
+                    <br>Every Monday starting February 18 from 17.00 to 19.00 at The Shortcut Lab.
+                </p>
                 </div>
                 
                 <div class='reactclubs'> 
@@ -81,17 +83,17 @@
                 </p>
             </div>
 
-            <a name="Schedule"><h1>Club events</h1></a>
-            <div class="schedule">
-                <h6>Weekly event schedule</h6>
-                <table style="width:105%">
+             <h1>Club events</h1></a>
+             <a name="Schedule"></a><div class="schedule"></a>
+                 <h6>Weekly event schedule</h6>
+                 <table style="width:105%">
                     <tr>
                         <th>Mon</th>
                         <th>Tue</th>
                         <th>Wed</th>
                         <th>Thu</th>
                         <th>Fri</th>
-                    </tr>
+                    </tr> 
                     <tr>
                         <!-- update Monday event-->
                         <td>Python Club <br>17:00-19:00</td>
@@ -126,7 +128,7 @@
                     <div>
                       <img src="Galina.png" class='galinaimg'alt="image">
                      
-                        <p class="card-title-galina">Galina</p>
+                        <h5 class="card-title-galina">Galina</h5>
                         <p class="card-title">galina@theshortcut.org</p>
                         
                     </div>
@@ -134,13 +136,13 @@
 
                 
                 <h3 class='newsletters'>Subscribe to our newsletters</h3>
-                <form class='email' action="/action_page.php">
-                    Email: <input type="email" name="emailaddress">
-                    <button type="button" id="subscribebutton"><b>Subscribe!</b></button>
+                <form class='email'action="/action_page.php">
+                 <p class='apple'>Email: <input type="email" name="emailaddress"></p>
+                    <button type="button" id="subscribebutton"><b>Subscribe</b></button>
                 </form>    
 
                 <!-- Button to open the modal -->
-                <button class='signup'onclick="document.getElementById('id01').style.display='block'">Sign up to our clubs!</button>
+                <button class='signup'onclick="document.getElementById('id01').style.display='block'"> <b>Sign up to our clubs </b></button>
                 <!-- The Modal (contains the Sign Up form) -->
                 <div id="id01" class="modal">
                     <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">Go Back</span>
@@ -166,8 +168,10 @@
                         <br>
                        
                         <div class="clearfix">
-                          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                          <button type="submit" class="signup">Sign Up</button>
+                            <button type="submit" class="signupbtn">Sign Up</button>
+                            
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                          
                         </div>
                     </div>
                     </form>
